@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-+function Square(props) {
+function Square(props) {
     return (
         <button className="square" onClick={props.onClick}>
             {props.value}
@@ -30,9 +30,8 @@ class Board extends React.Component {
     }
 
     renderSquare(i) {
-
         return (
-            +<Square
+            <Square
                 value={this.state.squares[i]}
                 onClick={() => this.handleClick(i)}
             />
